@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Hero from '../components/Hero.astro'
+import Countdown from '../components/Countdown.astro'
+import Phrase from '../components/Phrase.astro'
+import DateInfo from '../components/DateInfo.astro'
+import Location from '../components/Location.astro'
+import LogoSection from '../components/LogoSection.astro'
+import Instagram from '../components/Instagram.astro'
+import Thanks from '../components/Thanks.astro'
+import Footer from '../components/Footer.astro'
+import Gallery from '../components/Gallery.astro'
+import MusicSection from '../components/MusicSection.astro'
+---
+
+<Layout>
+  <Hero />
+  <Countdown />
+  <Phrase />
+  <DateInfo />
+  <Location />
+  <LogoSection />
+  <Gallery />
+  <MusicSection />
+  <Instagram />
+  <section class='flex flex-col items-center justify-center bg-[#C9B5D1] px-4 py-12 text-center text-[#604776]'>
+    <p class='text-3xl' style="font-family: 'Svetze', sans-serif;">VALOR DE LA TARJETA</p>
+    <div class='mt-4 flex flex-col items-center' style="font-family: 'Montserrat', sans-serif;">
+      <p class='text-xl'>Mayores: $80.000</p>
+      <p class='text-xl'>Menores (4-12 años) $26.000</p>
+      <p class='text-xl'>Adolescentes (13-16 años) $52.000</p>
+    </div>
+    <p class='mt-4 text-lg' style="font-family: 'Montserrat', sans-serif;">Alias para transferir: juli.quince.</p>
+    <p class='mt-6 text-lg text-pretty' style="font-family: 'Montserrat', sans-serif;">Confirmá tu asistencia a través de Whatsapp antes del 12 de Octubre y avisanos si necesitas un menú especial (celíaco, vegetariano, vegano, etc)</p>
+    <div class='mt-6 flex gap-4' style="font-family: 'Montserrat', sans-serif;">
+      <a
+        href='https://wa.me/5493571329902?text=Hola!%20Quiero%20confirmar%20mi%20asistencia%20para%20la%20fiesta%20de%20Julieta'
+        class='rounded-xl bg-[#604776] px-6 py-2 text-sm font-thin tracking-widest text-white'
+        style="font-family: 'Svetze', sans-serif;"
+        target='_blank'
+      >
+        JULI
+      </a>
+      <a
+        href='https://wa.me/5493571538597?text=Hola!%20Quiero%20confirmar%20mi%20asistencia%20para%20la%20fiesta%20de%20Julieta'
+        class='rounded-xl bg-[#604776] px-6 py-2 text-sm font-thin tracking-widest text-white'
+        style="font-family: 'Svetze', sans-serif;"
+        target='_blank'
+      >
+        CECI
+      </a>
+    </div>
+  </section>
+  <Thanks />
+  <Footer />
+</Layout>
