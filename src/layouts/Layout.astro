@@ -1,0 +1,92 @@
+---
+import Music from '../components/Music.astro'
+---
+
+<!doctype html>
+<html lang='es'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Julieta - Quince Años</title>
+    <meta property='og:title' content='Julieta - Quince Años' />
+    <meta property='og:image' content='/og.png' />
+    <meta
+      name='viewport'
+      content='width=device-width, initial-scale=1.0'
+    />
+    <link
+      rel='favicon'
+      href='/favicon.ico'
+      type='image/icon'
+    />
+  </head>
+  <body class='flex select-none items-center bg-[#FFFEF1]'>
+    <div class='relative min-h-screen max-w-[632px] bg-tertiary'>
+      <div class='relative sticky top-0 z-10 h-0'>
+        <div class='absolute right-4 top-4'>
+          <Music src='/music/music.mp3' />
+        </div>
+      </div>
+      <slot />
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  @font-face {
+    font-family: 'Yustine Signature';
+    src: url('/fonts/Yustine Signature.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Athelas';
+    src: url('/fonts/Athelas-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Athelas';
+    src: url('/fonts/Athelas-Bold.ttf') format('truetype');
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: 'Quiche Display';
+    src: url('/fonts/Quiche Display Regular.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat Variable.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Del Rose';
+    src: url('/fonts/DelRose-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Sallim';
+    src: url('/fonts/Sallim.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Svetze';
+    src: url('/fonts/Svetze.otf') format('opentype');
+  }
+
+  :root {
+    font-size: 16px;
+  }
+
+  html {
+    font-family: 'Quiche Display', sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+</style>
